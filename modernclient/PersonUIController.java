@@ -159,7 +159,7 @@ public class PersonUIController implements Initializable {
 
         });
         menuExit.setOnAction((ActionEvent t)-> System.exit(0));
-        menuExit.setAccelerator(new KeyCodeCombination(KeyCode.X, KeyCombination.CONTROL_ANY));
+        menuExit.setAccelerator(new KeyCodeCombination(KeyCode.X, KeyCombination.CONTROL_DOWN));
 
         anchorPane.setOnMousePressed(event ->{
             System.out.println("NNN");
