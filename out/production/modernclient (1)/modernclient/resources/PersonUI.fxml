@@ -35,6 +35,7 @@
                 </AnchorPane>
                 <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="272.0" prefWidth="396.0">
                <children>
+                  <Canvas fx:id="imageCanvas" height="200.0" layoutX="111.0" layoutY="57.0" width="200.0" />
                   <ButtonBar layoutX="63.0" layoutY="274.0" prefHeight="40.0" prefWidth="200.0">
                      <buttons>
                         <Button id="createButton" fx:id="createButton" mnemonicParsing="false" text="New" />
@@ -42,7 +43,6 @@
                         <Button id="removeButton" fx:id="removeButton" mnemonicParsing="false" text="Delete" />
                      </buttons>
                   </ButtonBar>
-                  <Canvas fx:id="imageCanvas" height="200.0" layoutX="111.0" layoutY="57.0" width="200.0" />
                </children>
                 </AnchorPane>
             </items>
