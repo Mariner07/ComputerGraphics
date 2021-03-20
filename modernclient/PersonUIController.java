@@ -148,9 +148,9 @@ public class PersonUIController implements Initializable {
                         "Contact info: \n"+
                         "email: nurlan.nogoibaev_2021@ucentralasia.org\n"+
                         "Phone number: +996771294945");
-                VBox layout=new VBox(15);
+                VBox layout=new VBox(10);
                 layout.getChildren().addAll(content);
-                layout.setAlignment(Pos.BASELINE_CENTER);
+                layout.setAlignment(Pos.TOP_LEFT);
                 Scene scene=new Scene(layout);
                 popUpWindow.setScene(scene);
                 popUpWindow.showAndWait();
