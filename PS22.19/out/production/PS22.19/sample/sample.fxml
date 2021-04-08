@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="250.0" prefWidth="360.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+    <columnConstraints>
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="120.0" />
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="120.0" />
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="120.0" />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints maxHeight="-Infinity" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="-Infinity" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    </rowConstraints>
+    <children>
+        <Label fx:id="CurrentTime" text="Label" GridPane.columnIndex="1" />
+        <ComboBox fx:id="HourBox" prefHeight="26.0" prefWidth="88.0" promptText="Hour" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+        <ComboBox fx:id="MinBox" prefHeight="26.0" prefWidth="75.0" promptText="Min" visibleRowCount="10" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+        <Label prefHeight="33.0" prefWidth="96.0" text="SetAlarmTo" GridPane.rowIndex="1">
+            <GridPane.margin>
+                <Insets left="10.0" />
+            </GridPane.margin></Label>
+        <Label prefHeight="33.0" prefWidth="96.0" text="CurrentTime">
+            <GridPane.margin>
+                <Insets left="10.0" />
+            </GridPane.margin></Label>
+        <ImageView fx:id="image" fitHeight="100.0" fitWidth="120.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+    </children>
+</GridPane>
